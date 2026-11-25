@@ -1,16 +1,418 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="The Talent Leader — The Future of Work. The Value of People.">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="section-label">HR Consulting & Capability Programmes</span>
+      <h1 class="hero-title">The Future of Work.<br />The Value of People.</h1>
+      <p class="hero-sub">
+        HR courses and capability programmes designed for Heads of HR, CHROs, and their direct reports.
+        Featuring external speakers and specialists primarily from the UK and Australia.
+      </p>
+      <a href="/values-perspective" class="btn btn-primary hero-cta">
+        Explore Our Perspective →
+      </a>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="challenges section">
+    <div class="container challenges-grid">
+      <div class="challenges-intro">
+        <div class="gold-line"></div>
+        <h2 class="challenges-title">The challenges keeping HR leaders awake</h2>
+        <p class="challenges-body">
+          We work with Heads of HR, CHROs, and their 1-downs to address the capability gaps
+          that matter most — from retention and succession to AI-driven transformation.
+        </p>
+      </div>
+      <div class="challenges-cards">
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          <h3>High-Performing Talent Retention</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+          <h3>Succession Planning</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+          <h3>High-Potential Employee Development</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+          </svg>
+          <h3>Rewards and Remuneration</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+          <h3>Future Workforce Readiness</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+        <div class="challenge-card">
+          <svg class="challenge-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1">
+            <path d="M12 2a10 10 0 1010 10H12V2z"/>
+            <path d="M12 2a10 10 0 0110 10"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <h3>AI and Organisational Transformation</h3>
+          <div class="gold-line-wide"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Banner -->
+  <section class="philosophy">
+    <div class="container philosophy-grid">
+      <div class="philosophy-left">
+        <span class="section-label">Our Philosophy</span>
+        <div class="ttl-monogram">T T L</div>
+        <p class="ttl-sub">Trust. Thrive. Learn.</p>
+      </div>
+      <div class="philosophy-right">
+        <div class="principle-col">
+          <span class="principle-num">01.</span>
+          <h3>TRUST</h3>
+          <p>Built on integrity, strengthened by relationships.</p>
+        </div>
+        <div class="principle-col">
+          <span class="principle-num">02.</span>
+          <h3>THRIVE</h3>
+          <p>Empowering people, advancing organisations.</p>
+        </div>
+        <div class="principle-col">
+          <span class="principle-num">03.</span>
+          <h3>LEARN</h3>
+          <p>Curiosity today, capability for tomorrow.</p>
+        </div>
+      </div>
+      <div class="philosophy-bar">
+        <p><em>Trust in every relationship. Thrive through every opportunity. Learn for a better tomorrow.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Preview -->
+  <section class="expertise-preview section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Do</span>
+        <h2>Our Expertise</h2>
+      </div>
+      <div class="three-cards">
+        <a href="/expertise" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1758691736934-e5d6d0c7f875?w=800&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="card-body">
+            <h3>Workforce & Organisational Effectiveness</h3>
+            <p>Job Evaluation, Job Description, Organisational Behaviour, Employee Relations.</p>
+            <span class="card-link">Learn more →</span>
+          </div>
+        </a>
+        <a href="/expertise" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?w=800&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="card-body">
+            <h3>Leadership & Talent Development</h3>
+            <p>Succession Planning, HiPo Development, Retention, Leadership Capability.</p>
+            <span class="card-link">Learn more →</span>
+          </div>
+        </a>
+        <a href="/expertise" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1774600134168-b9ebd714e4e1?w=800&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="card-body">
+            <h3>Future Workforce & Business Readiness</h3>
+            <p>AI Adoption, Workforce Preparedness, Rewards and Remuneration.</p>
+            <span class="card-link">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights Preview -->
+  <section class="insights-preview section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Latest Thinking</span>
+        <h2>Insights</h2>
+      </div>
+      <div class="three-cards">
+        <a href="/insights" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="card-body">
+            <h3>HRDF Funding and Claims</h3>
+            <p>Navigate HRD Corp claims and funding for your HR capability programmes.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer CTA -->
+  <section class="pre-footer">
+    <div class="container pre-footer-inner">
+      <h2>
+        The next conversation could change how your organisation thinks about its people.
+      </h2>
+      <a href="/contact" class="btn btn-outline">Start a Conversation →</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .section { padding: 5rem 0; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    background-color: var(--navy);
+    background-image: url('https://images.unsplash.com/photo-1786577401371-775a7a16e504?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(19,34,48,0.95) 0%, rgba(19,34,48,0.8) 100%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+  .hero-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    font-weight: 600;
+    color: var(--off-white);
+    margin: 1rem 0 1.5rem;
+    line-height: 1.1;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(250,248,245,0.8);
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+  }
+  .hero-cta { font-size: 0.8rem; }
+
+  /* Challenges */
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .challenges-intro .gold-line { margin-bottom: 1.5rem; }
+  .challenges-title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: var(--navy);
+  }
+  .challenges-body {
+    color: var(--charcoal);
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+  .challenges-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .challenge-card {
+    padding: 2rem;
+    border: 1px solid rgba(197, 155, 99, 0.25);
+    margin: -0.5px;
+    background-color: var(--cream);
+    transition: background-color 0.2s ease;
+  }
+  .challenge-card:hover { background-color: var(--stone); }
+  .challenge-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 1rem;
+  }
+  .challenge-card h3 {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--navy);
+  }
+
+  /* Philosophy */
+  .philosophy {
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 5rem 0 0;
+  }
+  .philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .philosophy-left .section-label { margin-bottom: 1.5rem; display: block; }
+  .ttl-monogram {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .ttl-sub {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: rgba(250,248,245,0.7);
+    letter-spacing: 0.1em;
+  }
+  .philosophy-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .principle-col {
+    padding: 2rem;
+    border-left: 1px solid rgba(197, 155, 99, 0.35);
+  }
+  .principle-col:first-child { border-left: none; }
+  .principle-num {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .principle-col h3 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--off-white);
+  }
+  .principle-col p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    line-height: 1.6;
+  }
+  .philosophy-bar {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(197, 155, 99, 0.35);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: rgba(250,248,245,0.7);
+  }
+
+  /* Cards shared */
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .section-header h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: var(--navy);
+    margin-top: 0.75rem;
+  }
+  .three-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .card {
+    background-color: var(--stone);
+    border: 1px solid rgba(197, 155, 99, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(19,34,48,0.08);
+  }
+  .card-image {
+    height: 200px;
+    background-color: #dcd4c5;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .card-body h3 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--navy);
+  }
+  .card-body p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .card-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* Pre-footer CTA */
+  .pre-footer {
+    background-color: var(--stone);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .pre-footer-inner {
+    max-width: 700px;
+  }
+  .pre-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 900px) {
+    .challenges-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .philosophy-grid { grid-template-columns: 1fr; }
+    .philosophy-right { grid-template-columns: 1fr; }
+    .principle-col { border-left: none; border-top: 1px solid rgba(197, 155, 99, 0.35); }
+    .principle-col:first-child { border-top: none; }
+    .three-cards { grid-template-columns: 1fr; }
+    .challenges-cards { grid-template-columns: 1fr; }
+  }
+</style>

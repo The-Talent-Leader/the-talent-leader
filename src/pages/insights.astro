@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Insights — The Talent Leader">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Latest Thinking</span>
+      <h1>Insights</h1>
+      <p class="page-intro">
+        Perspectives on people strategy, HR capability, and organisational development
+        for leaders across Southeast Asia and Australia.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="insights-grid">
+        <!-- Featured HRDF Article -->
+        <article class="insight-card featured">
+          <div class="insight-image" style="background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="insight-body">
+            <span class="insight-tag">Featured</span>
+            <h2>HRDF Funding and Claims</h2>
+
+            <div class="hrdf-content">
+              <h3>Why Register as an HRD Corp Employer and Pay the Levy?</h3>
+              <p>As a registered employer with HRD Corp, you gain access to high-quality training and development programmes tailored to your business and industry requirements.</p>
+              <p>You also become eligible for special funds and grants under government initiatives, such as Program Latihan MADANI.</p>
+              <p>Training conducted within HRD Corp's supervised ecosystem can boost productivity by up to 3%.</p>
+              <p>Registered employers receive ongoing support and advisory services from HRD Corp, covering HR management, levy utilisation, and more.</p>
+              <p>Active participation also qualifies your organisation for the Human Resource Development Award — a national recognition that strengthens your employer brand and helps attract top talent.</p>
+              <p>Furthermore, levy payments are tax-deductible under the Income Tax Act 1967, making it a cost-effective investment in your workforce.</p>
+            </div>
+
+            <a href="https://hrdcorp.gov.my" target="_blank" rel="noopener noreferrer" class="external-link">
+              Visit HRD Corp Official Site →
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pre-footer">
+    <div class="container pre-footer-inner">
+      <h2>Want to stay across our latest thinking?</h2>
+      <a href="/contact" class="btn btn-outline">Get in Touch →</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    margin: 1rem 0 1.25rem;
+  }
+  .page-intro {
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .section { padding: 5rem 0; }
+
+  .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .insight-card {
+    background-color: var(--stone);
+    border: 1px solid rgba(197, 155, 99, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  .insight-card.featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .insight-image {
+    height: 220px;
+    background-color: #dcd4c5;
+  }
+  .insight-card.featured .insight-image {
+    height: auto;
+    min-height: 300px;
+  }
+  .insight-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .insight-tag {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .insight-body h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  .insight-body p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .hrdf-content {
+    margin-bottom: 1.5rem;
+  }
+  .hrdf-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    line-height: 1.35;
+  }
+  .hrdf-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0.85rem;
+    color: var(--charcoal);
+  }
+  .external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    margin-top: auto;
+  }
+  .external-link:hover {
+    text-decoration: underline;
+  }
+
+  .pre-footer {
+    background-color: var(--stone);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .pre-footer-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .pre-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 900px) {
+    .insights-grid { grid-template-columns: 1fr; }
+    .insight-card.featured { grid-template-columns: 1fr; }
+    .insight-card.featured .insight-image { min-height: 200px; }
+  }
+</style>

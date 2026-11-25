@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Expertise — The Talent Leader">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">What We Do</span>
+      <h1>Our Expertise</h1>
+      <p class="page-intro">
+        Three capability pillars designed for Heads of HR, CHROs, and their direct reports —
+        built around the real challenges facing HR leaders today.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-num">01</span>
+            <div class="gold-line"></div>
+          </div>
+          <h2>Workforce & Organisational Effectiveness</h2>
+          <ul>
+            <li>Job Evaluation</li>
+            <li>Job Description</li>
+            <li>Organisational Behaviour</li>
+            <li>Employee Relations</li>
+          </ul>
+          <p class="pillar-note">
+            Practical frameworks that help HR leaders align structure, roles, and relationships to organisational strategy.
+          </p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-num">02</span>
+            <div class="gold-line"></div>
+          </div>
+          <h2>Leadership & Talent Development</h2>
+          <ul>
+            <li>Succession Planning</li>
+            <li>HiPo (High-Potential) Development</li>
+            <li>Retention</li>
+            <li>Leadership Capability</li>
+          </ul>
+          <p class="pillar-note">
+            Building the leadership pipeline and keeping your best people engaged, developed, and prepared for what comes next.
+          </p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-num">03</span>
+            <div class="gold-line"></div>
+          </div>
+          <h2>Future Workforce & Business Readiness</h2>
+          <ul>
+            <li>AI Adoption</li>
+            <li>Workforce Preparedness</li>
+            <li>Rewards and Remuneration</li>
+          </ul>
+          <p class="pillar-note">
+            Preparing organisations for the shifts ahead — from AI integration to remuneration strategy in a changing labour market.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pre-footer">
+    <div class="container pre-footer-inner">
+      <h2>Talk to us about the capability gap your team is facing.</h2>
+      <a href="/contact" class="btn btn-outline">Start a Conversation →</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    margin: 1rem 0 1.25rem;
+  }
+  .page-intro {
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .section { padding: 5rem 0; }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .pillar {
+    background-color: var(--stone);
+    padding: 2.5rem;
+    border: 1px solid rgba(197, 155, 99, 0.2);
+  }
+  .pillar-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .pillar-num {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+  }
+  .pillar h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 1.25rem;
+    line-height: 1.25;
+  }
+  .pillar ul {
+    list-style: none;
+    margin-bottom: 1.25rem;
+  }
+  .pillar li {
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(197, 155, 99, 0.15);
+    color: var(--charcoal);
+  }
+  .pillar-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+
+  .pre-footer {
+    background-color: var(--stone);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .pre-footer-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .pre-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 900px) {
+    .pillars { grid-template-columns: 1fr; }
+  }
+</style>

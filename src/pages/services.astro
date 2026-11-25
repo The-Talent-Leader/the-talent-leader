@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Services — The Talent Leader">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">How We Deliver</span>
+      <h1>Our Services</h1>
+      <p class="page-intro">
+        Bespoke HR courses and capability programmes delivered your way.
+        Featuring external speakers and specialists primarily from the UK and Australia,
+        tailored for HR practitioners, Heads of HR, CHROs, and their 1-downs.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="delivery-methods">
+        <div class="method">
+          <div class="method-image" style="background-image: url('https://images.unsplash.com/photo-1778877035089-c80dcb877f45?w=1200&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="method-body">
+            <span class="method-label">01</span>
+            <h2>Public Programs</h2>
+            <p>
+              Open-enrolment HR courses that bring together professionals from across industries.
+              An opportunity to learn from external UK and Australian specialists alongside regional peers,
+              benchmark thinking, and expand your network.
+            </p>
+            <ul>
+              <li>Multi-organisation cohorts</li>
+              <li>External speakers from the UK and Australia</li>
+              <li>Scheduled public intakes</li>
+              <li>Networking across HR leadership peers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="method">
+          <div class="method-image" style="background-image: url('https://images.unsplash.com/photo-1758873268998-2f77c2d38862?w=1200&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="method-body">
+            <span class="method-label">02</span>
+            <h2>In-House Programs</h2>
+            <p>
+              Tailored capability programmes designed specifically for your organisation.
+              We work with your Heads of HR and CHRO team to align content with your people strategy,
+              culture, and immediate business priorities.
+            </p>
+            <ul>
+              <li>Custom curriculum design</li>
+              <li>Aligned to your organisational context</li>
+              <li>Private cohorts for your HR team and 1-downs</li>
+              <li>Ongoing programme support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="method">
+          <div class="method-image" style="background-image: url('https://images.unsplash.com/photo-1698891667757-a902e4879254?w=1200&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="method-body">
+            <span class="method-label">03</span>
+            <h2>Online Delivery</h2>
+            <p>
+              Flexible, virtual-first programmes for distributed HR teams and busy schedules.
+              Same specialist content, adapted for digital engagement and self-paced learning where it matters.
+            </p>
+            <ul>
+              <li>Live virtual sessions with Q&A</li>
+              <li>Recorded modules for self-paced learning</li>
+              <li>Digital workbooks and assessments</li>
+              <li>Accessible across time zones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pre-footer">
+    <div class="container pre-footer-inner">
+      <h2>Not sure which format fits your team? Let's talk it through.</h2>
+      <a href="/contact" class="btn btn-outline">Start a Conversation →</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    margin: 1rem 0 1.25rem;
+  }
+  .page-intro {
+    max-width: 720px;
+    margin: 0 auto;
+    opacity: 0.8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .section { padding: 5rem 0; }
+
+  .delivery-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .method {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--stone);
+    border: 1px solid rgba(197, 155, 99, 0.2);
+    overflow: hidden;
+  }
+  .method:nth-child(even) {
+    direction: rtl;
+  }
+  .method:nth-child(even) > * {
+    direction: ltr;
+  }
+  .method-image {
+    min-height: 320px;
+    background-color: #dcd4c5;
+  }
+  .method-body {
+    padding: 2.5rem;
+  }
+  .method-label {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .method-body h2 {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  .method-body p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .method-body ul {
+    list-style: none;
+  }
+  .method-body li {
+    font-size: 0.9rem;
+    padding: 0.35rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--charcoal);
+  }
+  .method-body li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 6px;
+    height: 1px;
+    background-color: var(--gold);
+  }
+
+  .pre-footer {
+    background-color: var(--stone);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .pre-footer-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .pre-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 900px) {
+    .method { grid-template-columns: 1fr; }
+    .method:nth-child(even) { direction: ltr; }
+    .method-image { min-height: 200px; }
+  }
+</style>

@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Values & Perspective — The Talent Leader">
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Who We Are</span>
+      <h1>Values & Perspective</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="perspective-block">
+        <h2>Australian perspective. Southeast Asian understanding.</h2>
+        <div class="perspective-copy">
+          <p>The Talent Leader brings together regional business experience and a practical understanding of what makes organisations perform.</p>
+          <p>Based in Australia, we work with businesses across Southeast Asia, bringing together perspectives in people strategy, HR consulting, organisational development and sales and distribution channel management.</p>
+          <p>Our experience spans approximately three decades of working with organisations, developing leadership capability, strengthening business structures and building effective commercial channels.</p>
+          <p>We believe successful organisations are built when the right people, the right leadership and the right business strategy come together.</p>
+        </div>
+        <div class="perspective-note">
+          <div class="gold-line"></div>
+          <p>Our HR courses draw on external speakers and specialists primarily from the UK and Australia, combined with deep regional understanding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles-section">
+    <div class="container">
+      <div class="principles-header">
+        <span class="section-label">Our Principles</span>
+        <h2>The TTL Principles</h2>
+      </div>
+      <p class="principles-lead">
+        At The Talent Leader, we believe meaningful progress begins with three core principles: Trust. Thrive. Learn.
+      </p>
+      <div class="principles-grid">
+        <div class="principle">
+          <span class="principle-num">01.</span>
+          <h3>TRUST</h3>
+          <p>We build relationships through integrity, accountability and mutual respect.</p>
+        </div>
+        <div class="principle">
+          <span class="principle-num">02.</span>
+          <h3>THRIVE</h3>
+          <p>We empower people and organisations to reach their potential and create meaningful business outcomes.</p>
+        </div>
+        <div class="principle">
+          <span class="principle-num">03.</span>
+          <h3>LEARN</h3>
+          <p>We embrace continuous learning, fresh perspectives and the courage to evolve.</p>
+        </div>
+      </div>
+      <div class="principles-close">
+        <p>These principles shape how we think, how we work and how we create value for the organisations we serve.</p>
+        <p class="principles-tagline"><em>Trust in every relationship. Thrive through every opportunity. Learn for a better tomorrow.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pre-footer">
+    <div class="container pre-footer-inner">
+      <h2>Want to explore how these principles apply to your organisation?</h2>
+      <a href="/contact" class="btn btn-outline">Start a Conversation →</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    margin: 1rem 0 0;
+  }
+  .section { padding: 5rem 0; }
+
+  .perspective-block {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .perspective-block h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.25;
+  }
+  .perspective-copy p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    color: var(--charcoal);
+  }
+  .perspective-note {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(197, 155, 99, 0.25);
+  }
+  .perspective-note .gold-line { margin-bottom: 1rem; }
+  .perspective-note p {
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.8;
+    color: var(--charcoal);
+  }
+
+  .principles-section {
+    background-color: var(--stone);
+    padding: 5rem 0;
+  }
+  .principles-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .principles-header h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: var(--navy);
+    margin-top: 0.75rem;
+  }
+  .principles-lead {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+  }
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .principle {
+    background-color: var(--cream);
+    padding: 2.5rem;
+    border: 1px solid rgba(197, 155, 99, 0.2);
+  }
+  .principle-num {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .principle h3 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+  }
+  .principle p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+  .principles-close {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .principles-close p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+  }
+  .principles-tagline {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .pre-footer {
+    background-color: var(--cream);
+    padding: 5rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(197, 155, 99, 0.2);
+  }
+  .pre-footer-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .pre-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 900px) {
+    .principles-grid { grid-template-columns: 1fr; }
+  }
+</style>
