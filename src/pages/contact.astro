@@ -28,7 +28,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/thecenzyme@gmail.com" method="POST">
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b91e9175-25e1-4240-a732-cd521cee003f" />
+        <input type="hidden" name="subject" value="New contact form submission — The Talent Leader" />
+        <input type="hidden" name="from_name" value="The Talent Leader Website" />
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required />
@@ -64,21 +67,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     e.preventDefault();
     feedback.textContent = '';
 
-    const data = new FormData(form);
-    const name = String(data.get('name') || '').trim();
-    const mobile = String(data.get('mobile') || '').trim();
-    const email = String(data.get('email') || '').trim();
-    const company = String(data.get('company') || '').trim();
-    const message = String(data.get('message') || '').trim();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
-    if (!name || !mobile || !email || !company || !message) {
+    if (!data.name?.trim() || !data.mobile?.trim() || !data.email?.trim() || !data.company?.trim() || !data.message?.trim()) {
       feedback.textContent = 'Please fill in all required fields.';
       feedback.style.color = '#b45c5c';
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(data.email)) {
       feedback.textContent = 'Please enter a valid email address.';
       feedback.style.color = '#b45c5c';
       return;
@@ -87,15 +86,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     try {
       const response = await fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
       });
-      if (response.ok) {
-        feedback.textContent = 'Thank you — your message has been sent. We’ll be in touch soon.';
+      const result = await response.json();
+      if (response.ok && result.success) {
+        feedback.textContent = 'Thank you — your message has been sent. We'll be in touch soon.';
         feedback.style.color = '#3a7d44';
         form.reset();
       } else {
-        feedback.textContent = 'Something went wrong. Please try again or email us directly.';
+        feedback.textContent = result.message || 'Something went wrong. Please try again or email us directly.';
         feedback.style.color = '#b45c5c';
       }
     } catch {
